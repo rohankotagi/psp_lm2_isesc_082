@@ -3,16 +3,16 @@ int add(int a, int b)
 {
     int sum;
     sum= a+b;
-    printf("Sum is %d", sum);
-    // printf("Sum is %d",sum);
+  
     
 }
 
 
 int main(){
-    add(5,6);
+    int a, b, sum;
+    printf("Enter the 2 numbers to be added");
+    scanf("%d %d", &a, &b);
+    sum=add(a,b);
+    printf("The sum of %d and %d is %d" ,a, b, sum);
     return 0;
 }
-
-
-
