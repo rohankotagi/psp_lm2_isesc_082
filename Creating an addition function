@@ -1,18 +1,37 @@
 #include<stdio.h>
-int add(int x, int y)
+int input1(int a)
+{
+    printf("Enter 1st number to be added");
+    scanf("%d", &a);
+    return a;
+}
+int input2(int b)
+{
+    printf("Enter 2nd number to be added");
+    scanf("%d", &b);
+    return b ;
+}
+
+int add(int a, int b)
 {
     int sum;
-    sum= x+y;
-  
-    
+    sum= a+b;
+    return sum;
 }
+
+int output(int sum)
+{
+    printf("Sum is %d", sum);
+    return sum;
+}
+
 
 
 int main(){
     int a, b, sum;
-    printf("Enter the 2 numbers to be added");
-    scanf("%d %d", &a, &b);
+    a=input1(a);
+    b=input2(b);
     sum=add(a,b);
-    printf("The sum of %d and %d is %d" ,a, b, sum);
+    output(sum);
     return 0;
 }
