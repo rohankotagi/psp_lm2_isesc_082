@@ -1,9 +1,3 @@
-void output(int a, int b, int sum)
-{
-    printf("Sum of %d and %d is %d", a, b, sum);
-}
-
-
 #include<stdio.h>
 int input1()
 {
@@ -27,6 +21,10 @@ int add(int a, int b)
     return sum;
 }
 
+void output(int a, int b, int sum)
+{
+    printf("Sum of %d and %d is %d", a, b, sum);
+}
 
 int main(){
     int a, b, sum;
