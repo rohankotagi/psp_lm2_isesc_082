@@ -1,53 +1,53 @@
 #include<stdio.h>
 #include<math.h>
 
-int input1()
+float input1()
 {
-    int x1;
+    float x1;
     printf("Enter abscissa of the first point");
-    scanf("%d", &x1);
+    scanf("%f", &x1);
     return x1;
 }
 
-int input2()
+float input2()
 {
-    int y1;
+    float y1;
     printf("Enter ordinate of the first point");
-    scanf("%d", &y1);
+    scanf("%f", &y1);
     return y1;
 }
 
-int input3()
+float input3()
 {
-    int x2;
+    float x2;
     printf("Enter abscissa of the second point");
-    scanf("%d", &x2);
+    scanf("%f", &x2);
     return x2;
 }
 
-int input4()
+float input4()
 {
-    int y2;
+    float y2;
     printf("Enter ordinate of the second point");
-    scanf("%d", &y2);
+    scanf("%f", &y2);
     return y2;
 }
 
-int distanceCalculator(int x1, int y1, int x2, int y2)
+float distanceCalculator(int x1, int y1, int x2, int y2)
 {
-    int distance;
+    float distance;
     distance=sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)));
     return distance;
 }
 
-void output(int distance)
+void output(float distance)
 {
-    printf("The distance between Point 1 and Point 2 is %d", distance);
+    printf("The distance between Point 1 and Point 2 is %f", distance);
 }
 
 
 int main() {
-    int x1, y1, x2, y2, distance;
+    float x1, y1, x2, y2, distance;
     x1=input1();
     y1=input2();
     x2=input3();
