@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<math.h>
+
+int main() {
+    int x1, y1, x2, y2, num1, num2, distance;
+    printf("Enter a point");
+    scanf("%d %d", &x1, &y1);
+    printf("Enter another point");
+    scanf("%d %d", &x2, &y2);
+    num1= (x2-x1)*(x2-x1);
+    num2= (y2-y1)*(y2-y1);
+    distance= sqrt(num1+num2);
+    printf("The distance between the two points is %d", distance);
+    return 0;
+}
